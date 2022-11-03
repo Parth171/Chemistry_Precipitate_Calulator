@@ -53,36 +53,41 @@ def Element_Molar_Mass(ELEMENT):
 
 if __name__ == "__main__":
 
-    USER_INPUT_1 = input("Enter your first element: ")
+    USER_ELEMENT_1 = input("Enter your first element: ")
+    USER_VOLUME_1 = input("Enter the volume for your first element: ")
+    USER_CONCENTRATION_1 = input("Concentration of the element: ")
 
-    ELEMENT_1.append(USER_INPUT_1)
 
-    ELEMENT1_MOLAR_MASS = Element_Molar_Mass(USER_INPUT_1)
+    ELEMENT_1.append(USER_ELEMENT_1),
 
-    ELEMENT_1.append(ELEMENT1_MOLAR_MASS)
+    ELEMENT1_MOLAR_MASS = Element_Molar_Mass(USER_ELEMENT_1)
 
-    ELEMENT1_CHARGE = Element_Charge(USER_INPUT_1)
+    ELEMENT_1.append(USER_VOLUME_1)
 
-    ELEMENT_1.append(ELEMENT1_CHARGE)
+    ELEMENT1_CHARGE = Element_Charge(USER_ELEMENT_1)
+
+    ELEMENT_1.append(USER_CONCENTRATION_1)
 
     print(ELEMENT_1)
 
 
 
-    print(f"The molar mass of {USER_INPUT_1} is {ELEMENT1_MOLAR_MASS} and the charge is {ELEMENT1_CHARGE}")
+    print(f"The molar mass of {USER_ELEMENT_1} is {ELEMENT1_MOLAR_MASS} and the charge is {ELEMENT1_CHARGE}")
 
 
     USER_INPUT_2 = input("Enter you second element: ")
+    USER_VOLUME_2 = input("Enter the volume for your first element: ")
+    USER_CONCENTRATION_2 = input("Concentration of the element: ")
 
     ELEMENT_2.append(USER_INPUT_2)
 
     ELEMENT2_MOLAR_MASS = Element_Molar_Mass(USER_INPUT_2)
 
-    ELEMENT_2.append(ELEMENT1_MOLAR_MASS)
+    ELEMENT_2.append(USER_VOLUME_2)
 
     ELEMENT2_CHARGE = Element_Charge(USER_INPUT_2)
 
-    ELEMENT_2.append(ELEMENT2_CHARGE)
+    ELEMENT_2.append(USER_CONCENTRATION_2)
 
     print(ELEMENT_2)
 
