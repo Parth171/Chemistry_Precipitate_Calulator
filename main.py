@@ -182,8 +182,15 @@ def Limiting_Reagent(LIST_1, LIST_2):
 
 
 def Add_to_List(LIST, ELEMENT, COEFFICIENT, MOL, MASS):
+
     """
-    Adds the components of the element to the list
+    Adds the components of the element to a list
+    :param LIST: list
+    :param ELEMENT: str
+    :param COEFFICIENT: int
+    :param MOL: float
+    :param MASS: float
+    :return: none
     """
 
     COEFFICIENT = abs(COEFFICIENT)
@@ -196,10 +203,12 @@ def Add_to_List(LIST, ELEMENT, COEFFICIENT, MOL, MASS):
 def Modify_List(LIST):
 
     """
-
-    :param LIST: list
-    :return: none
+    Changes the molar mass according to the coefficient of the element.
+    :param LIST:
+    :return:
     """
+
+
 
 
     MOLAR_MASS = LIST[0] * LIST[3]
@@ -208,8 +217,12 @@ def Modify_List(LIST):
 
 
 def Compound_Mol(LIMITING_REAGENT_MOL, LIMITING_REAGENT_COEFFICIENT):
+
     """
-    Calculates the mol of the entire compound
+    Determines the amount of mols of the compound
+    :param LIMITING_REAGENT_MOL: float
+    :param LIMITING_REAGENT_COEFFICIENT: int
+    :return: float
     """
 
     MOL = (LIMITING_REAGENT_MOL) * (1 / LIMITING_REAGENT_COEFFICIENT)
@@ -218,9 +231,14 @@ def Compound_Mol(LIMITING_REAGENT_MOL, LIMITING_REAGENT_COEFFICIENT):
 
 
 def Precipitate_Mass(MOL, MOLAR_MASS):
+
     """
-    finds mass of precipitate
+    Finds the mass of the precipitate
+    :param MOL: float
+    :param MOLAR_MASS: float
+    :return: float
     """
+
 
     MASS = MOL * MOLAR_MASS
 
